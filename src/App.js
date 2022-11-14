@@ -3,9 +3,10 @@ import './App.css'
 import myimg from './img/myimg.jpg'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars,faArrowUp} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook,faTwitter,faInstagram} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faFacebook, faTwitter,faInstagram)
+library.add(faFacebook, faTwitter,faInstagram,faBars,faArrowUp)
 
 const App = () => {
   return (
@@ -28,10 +29,10 @@ const App = () => {
               <a href="https://www.instagram.com/sandipmrj/"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>
             </div>
 
-            <div id="nav-bar"><i className="fas fa-bars"></i></div>
+            <div id="nav-bar"><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
 
             <div className="scroll-button">
-              <a href="#home"><i className="fas fa-arrow-up"></i></a>
+              <a href="#home"><FontAwesomeIcon icon="fa-solid fa-arrow-up" /></a>
             </div>
           </div>
         </nav>
