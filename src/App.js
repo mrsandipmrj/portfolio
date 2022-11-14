@@ -1,8 +1,11 @@
 import React from 'react'
 import './App.css'
 import myimg from './img/myimg.jpg'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebook,faTwitter,faInstagram} from '@fortawesome/free-brands-svg-icons'
 
-
+library.add(faFacebook, faTwitter,faInstagram)
 
 const App = () => {
   return (
@@ -20,9 +23,9 @@ const App = () => {
               <li><a href="#contact">Contact</a></li>
             </ul>
             <div className="media-icons">
-              <a href="https://www.facebook.com/sandipmrj"><i className="fab fa-facebook-f"></i></a>
-              <a href="https://twitter.com/sandipmrj"><i className="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/sandipmrj/"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/sandipmrj"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a>
+              <a href="https://twitter.com/sandipmrj"><FontAwesomeIcon icon="fa-brands fa-twitter" /></a>
+              <a href="https://www.instagram.com/sandipmrj/"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>
             </div>
 
             <div id="nav-bar"><i className="fas fa-bars"></i></div>
